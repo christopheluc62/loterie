@@ -1,15 +1,16 @@
 .conteneur-grid {
 display: grid;
 grid-gap: 10px;
-width: 50%;
+width: 35%;
 height: 25%;
+padding: 10px;
 border: 2px solid red;
 background-color: #DDD;
 grid-template-columns: repeat(10, 1fr);
 grid-template-rows: repeat(5, 1fr);
 }
 .conteneur-grid > div{
-  padding: 20px 0px;
+  padding: 10px 0px;
   background-color: #ED8;
   border: 1px dashed black;
 }
