@@ -8,9 +8,11 @@ border: 2px solid red;
 background-color: #DDD;
 grid-template-columns: repeat(10, 1fr);
 grid-template-rows: repeat(5, 1fr);
+text-align: center;
 }
+
 .conteneur-grid > div{
   padding: 10px 0px;
   background-color: #ED8;
-  border: 1px dashed black;
+  border: 1px solid black;
 }
