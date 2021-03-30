@@ -1,3 +1,4 @@
+//création 25 cases
 function createCase(number) {
 	const container = document.querySelector(".container-grid");
 	const ccase = document.createElement("div");
@@ -10,10 +11,11 @@ function createCase(number) {
 	ccase.appendChild(ccaseNumber);
 }
 
-for (let i=2; i<=25; i++) {
+for (let i=1; i<=25; i++) {
 	createCase(i);
 }
 
+//tirage 5 numéros distincts
 function entierAleatoire(min, max) {
  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -21,24 +23,16 @@ function entierAleatoire(min, max) {
 let array = [];
 for (let i=0; i<5; i++) {
 	let number = entierAleatoire(1, 25);
+  	if (array.includes(number)) {
+  	i -= 1;
+  	} else {
 	array.push(number);
+	}
 }
+
+//affichage des numéros sortis dans l'ordre croissant
+function compare(x, y) {
+	return x - y;
+}
+array.sort(compare);
 document.getElementById("resultat").innerHTML = array.join("-");
-
-
-//vérifier ensuite qu'il n'y a pas de numéros identiques
-
-//pour trier dans l'ordre croissant
-// const array=[4,12,68,0,1,56,23,4];
-
-//   function compare(x, y) {
-//     return x - y;
-//   }
-// let nombres = array;
-// nombres.sort(compare);
-
-// if(nombres === array) {
-// console.log("true");
-// } else {
-// console.log("false");
-// }

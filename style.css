@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(188, 193, 238);
+  background-color: rgb(17, 45, 71);
 }
 
 .container-grid {
@@ -8,8 +8,8 @@ grid-gap: 10px;
 width: 500px;
 height: 500px;
 padding: 10px;
-border: 2px solid rgb(140, 0, 255);
-background-color: rgb(157, 116, 177);
+border: 2px solid rgb(19, 3, 87);
+background-color: rgb(94, 166, 194);
 grid-template-columns: repeat(5, 1fr);
 grid-template-rows: repeat(5, 1fr);
 }
@@ -18,12 +18,24 @@ grid-template-rows: repeat(5, 1fr);
 
 .ccase-class {
   padding: 10px 0px;
-  background-color: rgb(223, 231, 103);
+  background-color: rgb(226, 228, 195);
   border: 1px solid black;
+  border-radius: 50%;
 }
 
 .ccaseNumber-class {
-  text-align: center;
-  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
   color: black;
+}
+
+h1, h2 {
+  color: white;
+}
+
+#resultat {
+  color: white;
+  font-size: 25px;
 }
