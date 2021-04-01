@@ -36,3 +36,12 @@ function compare(x, y) {
 }
 array.sort(compare);
 document.getElementById("resultat").innerHTML = array.join("-");
+
+
+
+const choice = document.querySelector(".ccase-class");
+choice.addEventListener("click", function(){
+	document.getElementById("test").innerHTML = "Case sélectionnée";
+});
+
+//const choice = document.querySelectorAll("div.ccase-class");
