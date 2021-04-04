@@ -1,7 +1,7 @@
 body {
-    background-image: url("pictures/boulesloto2.jpg");
-    background-size: cover;
-    }
+background-image: url("pictures/boulesloto2.jpg");
+background-size: cover;
+}
 
 .container-grid {
 display: grid;
@@ -82,13 +82,29 @@ justify-content: space-around;
 
 #tableau table,
 th,td {
-  padding: 14px;
-  border: 1px solid black;
-  border-collapse: collapse;
-  font-size: 15px;
+padding: 14px;
+border: 1px solid black;
+border-collapse: collapse;
+font-size: 15px;
+text-align: center;
 }
 
 .centrer {
-    margin-left: auto;
-    margin-right: auto;
-  }
+margin-left: auto;
+margin-right: auto;
+}
+
+#section {
+display: flex;
+justify-content: space-between;  
+}
+
+#section1 {
+border: 2px solid rgb(19, 3, 87); 
+}
+
+#section2, #section3 {
+border: 2px solid rgb(19, 3, 87);
+height: 100px;
+width: 200px;
+}
