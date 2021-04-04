@@ -38,10 +38,22 @@ array.sort(compare);
 document.getElementById("resultat").innerHTML = array.join("-");
 
 
+//sélection des numéros par le joueur
 
-const choice = document.querySelector(".ccase-class");
-choice.addEventListener("click", function(){
-	document.getElementById("test").innerHTML = "Case sélectionnée";
-});
+const choice = document.querySelectorAll(".ccase-class");
+for (let i=0; i<choice.length; i++) {
+choice[i].addEventListener("click", function(event){
+	if ( event.currentTarget.style.backgroundColor === 'red') {
+		event.currentTarget.style.backgroundColor = "rgb(226, 228, 195)";
+	} else {
+		event.currentTarget.style.backgroundColor = 'red';
+	}
+ });
+ }
 
-//const choice = document.querySelectorAll("div.ccase-class");
+// let array= [];
+// let n=0;
+// while (n<5) {
+// array.push(i+1);
+// n++;
+// }
