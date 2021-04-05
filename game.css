@@ -10,7 +10,7 @@ width: 400px;
 height: 400px;
 padding: 10px;
 border: 2px solid rgb(19, 3, 87);
-background-color: rgb(54, 101, 202);
+background-color: rgb(153, 241, 204);
 grid-template-columns: repeat(5, 1fr);
 grid-template-rows: repeat(5, 1fr);
 }
@@ -64,7 +64,7 @@ width: 400px;
 height: 400px;
 padding: 10px;
 border: 2px solid rgb(19, 3, 87);
-background-color: rgb(54, 101, 202); 
+background-color: rgb(153, 241, 204);
 }
 
 .tableauGains {
@@ -72,7 +72,7 @@ width: 400px;
 height: 400px;
 padding: 10px;
 border: 2px solid rgb(19, 3, 87);
-background-color: rgb(54, 101, 202);   
+background-color: rgb(153, 241, 204);
 }
 
 .tableaux {
@@ -96,15 +96,20 @@ margin-right: auto;
 
 #section {
 display: flex;
-justify-content: space-between;  
+justify-content: space-around;  
 }
 
 #section1 {
-border: 2px solid rgb(19, 3, 87); 
+border: 2px solid rgb(19, 3, 87);
 }
 
 #section2, #section3 {
+display: flex;
+justify-content: space-between;
+align-items: center;
 border: 2px solid rgb(19, 3, 87);
 height: 100px;
-width: 200px;
+width: 250px;
+padding-right: 15px;
+padding-left: 15px;
 }
